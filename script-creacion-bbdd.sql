@@ -2,18 +2,18 @@ CREATE SCHEMA sports_analytics;
 USE sports_analytics; 
 
 CREATE TABLE season(
-	season_id INT PRIMARY KEY,
+	season_id BIGINT PRIMARY KEY,
 	season VARCHAR (30));
 	
 CREATE TABLE teams(
-	team_id INT PRIMARY KEY,
+	team_id BIGINT PRIMARY KEY,
 	team VARCHAR (30));
 
         
 CREATE TABLE stats (
-	id_stat_team_season INT PRIMARY KEY,
-    team_id INT,
-    season_id INT,
+	id_stat_team_season BIGINT PRIMARY KEY,
+    team_id BIGINT,
+    season_id BIGINT,
     gp INT,
     w INT,
     l INT,
